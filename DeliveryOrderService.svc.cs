@@ -42,6 +42,7 @@ namespace TransportService
         {
             var result = new Core.Model.mdlResultSvc();
             result.Title = "Get Json Download";
+			string aa = ""; //test chris
             var resultJson = new Core.Model.mdlJsonList();
             resultJson = JsonFacade.LoadJson(json);
 
@@ -95,6 +96,7 @@ namespace TransportService
         {
             string serlJson = JsonConvert.SerializeObject(lParamlist);
             string lEmployeeID = lParamlist.FirstOrDefault().EmployeeID;
+			string aa = ""; // test chris
 
             var resultInsertReturDetail = ReturFacade.InsertReturOrderDetail(lParamlist);
             string JsonResultlist = JsonConvert.SerializeObject(resultInsertReturDetail);
