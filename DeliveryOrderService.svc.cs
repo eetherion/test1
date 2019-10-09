@@ -22,7 +22,7 @@ namespace TransportService
         //API Reason
         public Stream GetReason()
         {
-            string json = Core.Services.RestPublisher.Serialize(ReasonFacade.LoadReason());
+            string json = Core.Services.RestPublisher.Serialize(ReasonFacade.LoadReason()); // chris
             WebOperationContext.Current.OutgoingResponse.ContentType = "application/json; charset=utf-8";
             MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(json));
             return ms;
