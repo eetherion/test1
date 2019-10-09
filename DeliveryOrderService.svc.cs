@@ -23,7 +23,7 @@ namespace TransportService
         public Stream GetReason()
         {
 
-            string json = Core.Services.RestPublisher.Serialize(ReasonFacade.LoadReason());//wawan lagi
+            string json = Core.Services.RestPublisher.Serialize(ReasonFacade.LoadReason());//wawan lagi-lagi
 
             string json = Core.Services.RestPublisher.Serialize(ReasonFacade.LoadReason()); // chris
 
